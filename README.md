@@ -84,14 +84,7 @@ Included:
 - The AI content-generation clients (captions, images) and the vision-LLM action fallback.
 - The PM2 fleet-plus-monitor process pattern.
 
-Not included, by design:
-
-- Account provisioning. The subsystem that created and registered accounts is omitted. This includes the identity, phone-verification, and email-verification pieces that fed it.
-- Session integrity handling. The subsystem responsible for making automated sessions pass as ordinary browser traffic is omitted, along with any anti-bot or challenge-solving code.
-- The account-network data collection. The follower and engagement scraping code, and the automated following behavior, are omitted.
-- Persona and likeness generation. The code that fabricated per-account identities and their reference imagery is omitted, and the content clients here have been decoupled from it.
-
-Those omitted subsystems are described at a box level in [ARCHITECTURE.md](ARCHITECTURE.md) so the shape of the full system is clear, with no method-level detail.
+This repository contains the reusable queue, concurrency, session-isolation, proxy, monitoring, and content-pipeline infrastructure; account-specific application logic and private operational components are excluded.
 
 ## License
 
