@@ -12,7 +12,7 @@ This repository is the task-neutral infrastructure layer of that system: the que
 - AI content pipeline. Multi-provider LLM clients generate captions with few-shot exemplars and generate images, with prompt-version hashing so output can be traced back to the prompt that produced it.
 - Monitoring and recovery. A PM2 fleet runs the workers with bounded auto-restart, and a monitor process tracks queue depth and worker health.
 
-For the full picture, including the parts that are described but not shipped, read [ARCHITECTURE.md](ARCHITECTURE.md).
+[ARCHITECTURE.md](ARCHITECTURE.md) covers the system design in more depth.
 
 ## Repository layout
 
